@@ -36,7 +36,7 @@ export default function HomePage(): JSX.Element {
           {t('summary')}
         </p>
 
-        <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm">
+        <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-lg md:text-xl">
           <Link
             href="/portfolio"
             className="border-b border-foreground pb-1 font-medium hover:border-accent hover:text-accent transition-colors"
