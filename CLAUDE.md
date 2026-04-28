@@ -13,8 +13,8 @@ Engineer with a focus on embedded systems, control engineering, and EV /
 aviation systems. Built as a static site for GitHub + Vercel hosting.
 
 The site has four pages: Home, About (full CV), Portfolio (per-year
-listing + detail pages), and Contact. It is **dual language (id / en)**
-with `id` as the default locale.
+listing + detail pages), and Contact. It is **dual language (en / id)**
+with `en` as the default locale.
 
 ---
 
@@ -36,7 +36,7 @@ immediately if the active Node is older.
 
 ```bash
 npm install            # install once
-npm run dev            # http://localhost:3000 → /id
+npm run dev            # http://localhost:3000 → /en
 npm run build          # production build
 npm run type-check     # tsc --noEmit
 npm run lint           # eslint . using flat config (eslint.config.mjs)
@@ -147,8 +147,8 @@ When starting a new role, add a new entry at the **top** of
 
 ## Internationalization
 
-- Supported locales: **`id`** (default) and **`en`**.
-- Locale prefix is **always present** in URLs (`/id/...`, `/en/...`).
+- Supported locales: **`en`** (default) and **`id`**.
+- Locale prefix is **always present** in URLs (`/en/...`, `/id/...`).
 - Internal links **must** use the wrapper `Link` component from
   `@/components/Link`, not `next/link` directly. The wrapper
   prepends the active locale.

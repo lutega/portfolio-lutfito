@@ -19,7 +19,7 @@ type LinkProps = Omit<ComponentProps<typeof NextLink>, 'href'> & {
  * @example
  * ```tsx
  * <Link href="/portfolio">Portfolio</Link>
- * // → renders <a href="/id/portfolio"> when locale is 'id'
+ * // → renders <a href="/en/portfolio"> when locale is 'en'
  * ```
  */
 export function Link({ href, ...rest }: LinkProps): JSX.Element {

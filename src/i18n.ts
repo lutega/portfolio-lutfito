@@ -4,10 +4,10 @@ import { notFound } from 'next/navigation';
 /**
  * Supported locales for the portfolio site.
  *
- * The order is intentional: Indonesian first because the primary audience
- * is Indonesian, English second for international visibility.
+ * English first because it is the default surface shown to first-time
+ * visitors; Indonesian is offered as a secondary toggle.
  */
-export const locales = ['id', 'en'] as const;
+export const locales = ['en', 'id'] as const;
 
 /**
  * Locale type derived from the {@link locales} array.
@@ -16,8 +16,11 @@ export type Locale = (typeof locales)[number];
 
 /**
  * Default locale used when no locale is detected in the URL.
+ *
+ * Visiting `/` without a locale prefix redirects to `/<defaultLocale>` —
+ * so this also controls the language a visitor sees on the bare domain.
  */
-export const defaultLocale: Locale = 'id';
+export const defaultLocale: Locale = 'en';
 
 /**
  * Type guard that narrows an arbitrary string to a known {@link Locale}.

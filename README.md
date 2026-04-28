@@ -33,7 +33,7 @@ npm install
 npm run dev
 ```
 
-Open <http://localhost:3000> — you will be redirected to <http://localhost:3000/id> (default locale). Switch to English via the `id / en` toggle in the header, or visit `/en` directly.
+Open <http://localhost:3000> — you will be redirected to <http://localhost:3000/en> (default locale). Switch to Indonesian via the `en / id` toggle in the header, or visit `/id` directly.
 
 ### Available scripts
 
