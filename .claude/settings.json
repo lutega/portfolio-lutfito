@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh -o /tmp/nvm-install.sh)",
+      "Bash(bash /tmp/nvm-install.sh)",
+      "Read(//home/lutega/.nvm/**)",
+      "Bash(bash -c 'export NVM_DIR=\"$HOME/.nvm\"; source \"$NVM_DIR/nvm.sh\"; nvm --version')",
+      "Bash(bash -c 'export NVM_DIR=\"$HOME/.nvm\"; source \"$NVM_DIR/nvm.sh\"; nvm install 20 2>&1; nvm use 20 2>&1; node --version')",
+      "Bash(export PATH=\"$HOME/.nvm/versions/node/v20.20.2/bin:$PATH\")",
+      "Bash(npm --version)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npm install *)",
+      "Bash(command -v gh)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git config *)",
+      "Read(//home/lutega/.ssh/**)",
+      "Bash(git add *)"
+    ],
+    "additionalDirectories": [
+      "/home/lutega/develop/repos/lutega"
+    ]
+  }
+}

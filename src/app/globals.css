@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Global styles for the Lutega portfolio.
+ *
+ * The site is light-mode only by design choice. We rely on Tailwind utility
+ * classes for most styling and only put genuinely global concerns here:
+ * font variables, base typography, smooth scrolling, and selection colors.
+ */
+
+:root {
+  /* Variable-font hookups — values come from the Next.js font loader. */
+  --font-display: 'Instrument Serif Fallback';
+  --font-sans: 'Geist Fallback';
+  --font-mono: 'Geist Mono Fallback';
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1, 'ss01' 1;
+}
+
+::selection {
+  background-color: theme('colors.accent');
+  color: theme('colors.background');
+}
+
+/* A subtle hairline rule used between sections. */
+.rule {
+  border-top: 1px solid theme('colors.border');
+}

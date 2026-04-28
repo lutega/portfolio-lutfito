@@ -1,0 +1,67 @@
+{
+  "site": {
+    "title": "Lutfito Danuega — System Engineer",
+    "description": "Portofolio dan CV Lutfito Danuega — System Engineer dengan keahlian di embedded systems dan control engineering."
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "portfolio": "Portofolio",
+    "contact": "Kontak"
+  },
+  "home": {
+    "tagline": "System Engineer",
+    "summary": "Berorientasi pada hasil, dengan fondasi kuat di embedded systems dan control engineering. Saat ini fokus pada pengembangan kendaraan listrik dan sistem aviasi.",
+    "currentRole": "Sekarang",
+    "viewWork": "Lihat portofolio",
+    "viewCv": "Lihat CV"
+  },
+  "about": {
+    "title": "Tentang",
+    "summarySection": "Ringkasan",
+    "experienceSection": "Pengalaman Kerja",
+    "educationSection": "Pendidikan",
+    "skillsSection": "Keahlian",
+    "certificationsSection": "Sertifikasi & Pelatihan",
+    "languagesSection": "Bahasa",
+    "present": "sekarang",
+    "team": "Tim",
+    "members": "orang",
+    "gpa": "IPK"
+  },
+  "portfolio": {
+    "title": "Portofolio",
+    "subtitle": "Proyek freelance dan kontribusi individu, dikelompokkan per tahun.",
+    "role": "Peran",
+    "team": "Tim",
+    "production": "Produksi",
+    "units": "unit",
+    "individual": "Individual",
+    "viewDetail": "Lihat detail"
+  },
+  "portfolioDetail": {
+    "back": "Kembali ke portofolio",
+    "role": "Peran",
+    "team": "Tim",
+    "year": "Tahun",
+    "complexity": "Kompleksitas",
+    "responsibilities": "Tanggung jawab",
+    "production": "Produksi"
+  },
+  "contact": {
+    "title": "Kontak",
+    "intro": "Tertarik untuk berkolaborasi atau punya pertanyaan? Silakan hubungi melalui kanal di bawah.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "Hak cipta dilindungi.",
+    "builtWith": "Dibuat dengan Next.js dan Tailwind CSS."
+  },
+  "language": {
+    "switch": "Bahasa",
+    "id": "Indonesia",
+    "en": "English"
+  }
+}

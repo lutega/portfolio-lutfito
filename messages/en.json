@@ -1,0 +1,67 @@
+{
+  "site": {
+    "title": "Lutfito Danuega — System Engineer",
+    "description": "Portfolio and CV of Lutfito Danuega — System Engineer with expertise in embedded systems and control engineering."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "tagline": "System Engineer",
+    "summary": "Results-oriented engineer with a strong foundation in embedded systems and control engineering. Currently focused on electric vehicle development and aviation systems.",
+    "currentRole": "Currently",
+    "viewWork": "View portfolio",
+    "viewCv": "View CV"
+  },
+  "about": {
+    "title": "About",
+    "summarySection": "Summary",
+    "experienceSection": "Work Experience",
+    "educationSection": "Education",
+    "skillsSection": "Skills",
+    "certificationsSection": "Certifications & Training",
+    "languagesSection": "Languages",
+    "present": "present",
+    "team": "Team of",
+    "members": "members",
+    "gpa": "GPA"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Freelance and individual projects, grouped by year.",
+    "role": "Role",
+    "team": "Team",
+    "production": "Production",
+    "units": "units",
+    "individual": "Individual",
+    "viewDetail": "View detail"
+  },
+  "portfolioDetail": {
+    "back": "Back to portfolio",
+    "role": "Role",
+    "team": "Team",
+    "year": "Year",
+    "complexity": "Complexity",
+    "responsibilities": "Responsibilities",
+    "production": "Production"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Interested in collaborating or have questions? Reach out through the channels below.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js and Tailwind CSS."
+  },
+  "language": {
+    "switch": "Language",
+    "id": "Indonesia",
+    "en": "English"
+  }
+}
