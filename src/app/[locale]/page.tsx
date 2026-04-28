@@ -2,6 +2,8 @@ import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/components/Link';
 import { profile } from '@/content/profile';
 import { experience } from '@/content/experience';
+import { portfolio } from '@/content/portfolio';
+import { groupByYear } from '@/lib/groupByYear';
 import { pickLocale } from '@/lib/types';
 import type { Locale } from '@/i18n';
 
@@ -20,6 +22,9 @@ export default function HomePage(): JSX.Element {
   // If none is found we fall back to the most recent entry.
   const currentRole =
     experience.find((entry) => entry.endDate === 'present') ?? experience[0];
+
+  // Flat newest-first list of portfolio entries for the homepage overview.
+  const projects = groupByYear(portfolio).flatMap((group) => group.entries);
 
   return (
     <>
@@ -65,6 +70,42 @@ export default function HomePage(): JSX.Element {
             <p className="mt-3 max-w-prose text-foreground/80">
               {pickLocale(currentRole.description, locale)}
             </p>
+          </div>
+        </section>
+      )}
+
+      {projects.length > 0 && (
+        <section className="border-t border-border">
+          <div className="mx-auto max-w-page px-6 py-12 md:px-10 md:py-16">
+            <div className="flex items-baseline justify-between gap-6">
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">
+                {t('allProjects')}
+              </p>
+              <Link
+                href="/portfolio"
+                className="font-mono text-xs uppercase tracking-[0.2em] text-muted hover:text-accent transition-colors"
+              >
+                {t('viewAll')} →
+              </Link>
+            </div>
+
+            <ul className="mt-8 divide-y divide-border">
+              {projects.map((entry) => (
+                <li key={entry.slug}>
+                  <Link
+                    href={`/portfolio/${entry.slug}`}
+                    className="group flex items-baseline justify-between gap-6 py-4 transition-colors hover:text-accent"
+                  >
+                    <span className="font-display text-xl leading-snug md:text-2xl">
+                      {entry.title}
+                    </span>
+                    <span className="shrink-0 font-mono text-sm text-muted group-hover:text-accent">
+                      {entry.year}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       )}
